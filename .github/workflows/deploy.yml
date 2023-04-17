@@ -14,5 +14,5 @@ jobs:
           script: |
             cd app
             git pull origin master
-            go test -cover ./...
+            go test -v ./..
             docker-compose down && docker-compose up --build -d
