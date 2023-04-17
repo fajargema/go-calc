@@ -13,7 +13,7 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 	fmt.Println(Add(2,3))
-	fmt.Println(Sum([]int{1, 2, 3, 4, 5}))
+	fmt.Println(Sum([]int{1, 2, 3, 4}))
 	fmt.Println(Average([]int{1, 2, 3, 4, 5}))
 	e.Logger.Fatal(e.Start(":8080"))
 	
